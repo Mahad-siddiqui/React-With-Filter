@@ -1,0 +1,158 @@
+/* SearchGallery.css */
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background-color: #f0f0f0;
+	font-family: 'Arial', sans-serif;
+	margin: 0;
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+.card-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+	gap: 16px;
+	justify-items: center;
+	align-items: stretch;
+	width: 100%;
+}
+
+.card {
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	width: 100%;
+	max-width: 205px;
+	padding: 16px;
+	background-color: #fff;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	text-align: center;
+	transition: transform 0.2s, box-shadow 0.2s;
+	position: relative;
+}
+
+.card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+	width: 100%;
+	height: auto;
+	border-radius: 8px 8px 0 0;
+}
+
+.card h2 {
+	font-size: 14px;
+	margin: 10px 0;
+	color: #333;
+}
+
+.card p {
+	font-size: 12px;
+	color: #666;
+	margin: 8px 0;
+}
+
+.card .price {
+	font-size: 16px;
+	color: #b12704;
+	margin: 8px 0;
+	cursor: pointer;
+}
+
+.card .category {
+	font-size: 11px;
+	color: #999;
+	margin-bottom: 8px;
+}
+
+.card .rating {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 12px;
+	color: #ff9900;
+}
+
+.card .rating span {
+	margin-left: 4px;
+	color: #666;
+}
+
+.card .rating.high span {
+	color: green !important;
+}
+
+.card .rating.medium span {
+	color: rgb(14, 3, 112) !important;
+}
+
+.card .rating.low span {
+	color: red !important;
+}
+
+.delete-button {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	background-color: red;
+	color: white;
+	border: none;
+	border-radius: 50%;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+}
+
+/* ------------------------header input------------------------------------- */
+.searchGallery {
+	box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.6);
+	padding: 20px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	background: white;
+}
+
+.searchGallery b {
+	color: white;
+	text-shadow: 0px 0px 10px #d21d48;
+	font-size: 3rem;
+	background: linear-gradient(to right, #4ebba3, #6dd965);
+	display: inline-block;
+	width: 100%;
+	padding: 20px 0;
+	border-radius: 7px;
+}
+
+.head {
+	margin: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.search {
+	margin: 0px 10px;
+	border: none;
+	width: 90rem;
+	height: 30px;
+	font-size: 1.7rem;
+	padding: 10px 20px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 10px #711261;
+	cursor: pointer;
+}
+
+#priority {
+	margin       : 0px 10px;
+	border       : none;
+	width        : 13rem;
+	font-size    : 1rem;
+	padding      : 10px 20px;
+	border-radius: 8px;
+	box-shadow   : 0px 0px 8px #b20988;
+	cursor       : pointer;
+}
